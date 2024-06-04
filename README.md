@@ -1,4 +1,4 @@
-# Portfolio Optimization Project
+# Markowitz and Black-Litterman Project
 
 This project includes two main notebooks that address different aspects of portfolio optimization. Below are the detailed analyses, insights, recommendations, discoveries, observations, and conclusions for each.
 
