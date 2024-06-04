@@ -2,10 +2,9 @@
 
 This project includes two main notebooks that address different aspects of portfolio optimization. Below are the detailed analyses, insights, recommendations, discoveries, observations, and conclusions for each.
 
-## 1. Black-Litterman Model
-
 ### Analysis and Observations
-- **Model Description**: The Black-Litterman model combines market expectations with investor opinions.
+- **Model Description**: The Black-Litterman model combines market expectations with investor opinions, while the Markowitz model utilizes historical data for the allocation of weights in the optimal portfolio.
+
 - **Implementation**: Implemented using the following code:
 
   ```python
@@ -18,10 +17,26 @@ This project includes two main notebooks that address different aspects of portf
   from pypfopt import BlackLittermanModel 
   from sklearn import covariance
   ```
-- **Key Results**: [Include important analysis results].
+- **Key Results**:
+
+| Indicator                | Modelo Markowitz | Modelo Black-Litterman |
+|--------------------------|------------------|------------------------|
+| Expected Annual Return   |     15.6%       | 9.1%                 |
+| Annual Volatility        |     22.4%       | 19.1%               |
+| Sharpe Ratio             |          0.21    | 0.37                  |
+
 
 ### Insights
-- **Market Perspective**: [Discussion on market expectations].
+- **Market Perspective**: The Colombia market presents several challenges for investment due to its developing nature:
+  - Low liquidity
+  - High volatility/high level of risk
+  - Low returns
+  - Limited diversification options
+  - Few companies outperform a risk-free asset in Colombia
+  - Limited presence of technology companies
+  - High probability of currency devaluation
+
+
 - **Investor Opinions**: [Discussion on how investor opinions were integrated].
 
 ### Recommendations
@@ -71,7 +86,8 @@ This project includes two main notebooks that address different aspects of portf
 - **Mejoras Futuras**: [Sugerencias para mejorar el modelo].
 
 ### Descubrimientos
-- **Comparación con otros Modelos**: [Resultados de la comparación con otros modelos de optimización].
+- **Comparison with other Models**: The Markowitz model serves the function of reducing risk by diversifying across multiple companies; however, it is somewhat limited by relying solely on historical data. As the market is uncertain and tends to behave differently over the years, this limitation can affect its effectiveness. In contrast, the Black-Litterman model allows for adjustments based on investor opinions, making it more accurate and reliable for investment decisions.
+
 
 ### Conclusión
 - **Eficacia del Modelo**: El modelo Black-Litterman es efectivo para [situaciones específicas] y proporciona [beneficios].
