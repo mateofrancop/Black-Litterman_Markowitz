@@ -3,7 +3,7 @@
 This project includes two main notebooks that address different aspects of portfolio optimization. Below are the detailed analyses, insights, recommendations, discoveries, observations, and conclusions for each.
 
 ### Analysis and Observations
-- **Model Description**: The Black-Litterman model combines market expectations with investor opinions, while the Markowitz model utilizes historical data for the allocation of weights in the optimal portfolio.
+- **Model Description**: The Markowitz model utilizes historical data for the allocation of weights in the optimal portfolio, while the Black-Litterman model combines market expectations with investor opinions. 
 
 - **Implementation**: Implemented using the following code:
 
