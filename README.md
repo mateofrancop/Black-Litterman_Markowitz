@@ -37,8 +37,6 @@ This project includes two main notebooks that address different aspects of portf
   - High probability of currency devaluation
 
 
-- **Investor Opinions**: 
-
 ## 1. Modelo Markowitz
 
 ### Análisis y Observaciones
@@ -47,13 +45,15 @@ This project includes two main notebooks that address different aspects of portf
 A continuacion se puede obervar el rendimiento promedio anual de las acciones colombianas a lo largo de 20 años 
 ![](https://i.imgur.com/qnAVn4p.png[/img])
 
+Se puede observar como la mayoria de las empresas seleccionadas tienen un rendimiento superior a la tasa libre de riesgo actual en colombia que esta en un porcentaje rondeado de 10%, sin embargo cabe destacar que una gran mayoria de estas tuvo sus mejores rendimientos en sus primeros 10 años apartir de ahi tuvieron un crecimiento mas lento incluso algunas de ellas se desvalorizaron pero al haber tenido grander rendimientos en el pasado al calcular el rendimiento salieron faborecidas. lo que puede significar un alto nivel de riesgo en el corto plazo. ademas sin tener la incertidumbre politica y economica que esta viviendo el pais actualmente.
+
 - **Descripción del Portafolio**: El portafolio de tangencia busca maximizar el ratio de Sharpe.
 - **Resultados Clave**: 
   - Expected annual return: 16.0%
   - Annual volatility: 23.4%
   - Sharpe Ratio: 0.22
  
- Con el metodo tradicional para maximizar la razon de charpe se optine los siguientes pesos % del las acciones en el portafolio optimo. 
+ Con el metodo tradicional para maximizar la razon de Sharpe se optine los siguientes pesos porcentuales en el portafolio optimo. 
  
 ![](https://i.imgur.com/xFRlopu.png[/img])
 
@@ -70,18 +70,24 @@ Sin embargo como se puede obervar en la tabla los pesos porcentuales se consentr
 
 apesar de que se sigue consentrando en solo 3 activos los pesos estan mas equilibrados entre si lo que confirma la teoria de markowitz que dice que entre mayor diversificacion en el portafolio menor es el riesgo asumido.
 
+### Frontera efficiente
+
+![](https://i.imgur.com/g0tNqQR.png[/img])
+
+como se observa en la frontera eficiente la estrella es el punto de tangencia el cual determina el portafolio optimo. Los puntos negros con letras en rojo son los activos que hacen parte de ese portafolio. se ve como el modelo elije activos que tengan mejor relacino riesgo/rendimiento ademas de que escoge los activos que esten por encima del punto de inicio de la linea de mercado de capitales lo que significa que se escogen activos que tengan mejor rendimiento que un activo libre de riesgo.
+
 ### Insights
-- **Rendimiento**: [Discusión sobre el rendimiento del portafolio].
-- **Volatilidad**: [Discusión sobre la volatilidad y su impacto].
+- **Rendimiento**: teniendo en cuanta la situacion economica del pais se puede considerar una buen rendimiento para un portafolio conformado por empresas de un pais en desarrollo.
+
+- **Volatilidad**:  Por otro lado al tener en cuenta la volatilidad el rendimiento es bajo comparado al riesgo asumido, como se puede ver en la razon de Sharpe de 0.21 lo cual indica poca retribucion por el riesgo tomado 
 
 ### Recomendaciones
-- **Optimización del Portafolio**: Sugerimos [recomendaciones específicas basadas en los resultados].
+- **Optimización del Portafolio**: Al tomar deciciones de inversion no seria sensato regirse estricatamente por el portafolio aqui presentado ya este modelo no tiene en cuenta la situacion actual de cada una de estas empresas ni el contexto macroeconimico. por lo que antes de invertir se recomendaria hacer un estudio exautivo y un analisis fundamental de cada una de estas empresas. 
 
-### Descubrimientos
-- **Impacto de la Regularización**: [Resultados y discusión sobre el impacto de la regularización L2].
 
 ### Conclusión
-- **Eficacia del Portafolio de Tangencia**: El portafolio de tangencia es adecuado para [situaciones específicas] y ofrece [beneficios].
+
+El modelo markowitz es util para tener una idea de como ha sido el rendimineto de los activos a traves de los años y como se puede diversificar el riesgo al invertir en una variedad de activos, sin embargo, al intentar predecir el comportamiento de las acciones tiende a quedarse corto al asumir que el mercado se comportara de igual forma en el futuro. 
 
 ## 1. MODELO BLACK LITTERMAN
 
