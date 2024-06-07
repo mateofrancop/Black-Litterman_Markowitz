@@ -37,25 +37,38 @@ This project includes two main notebooks that address different aspects of portf
   - High probability of currency devaluation
 
 
-- **Investor Opinions**: [Discussion on how investor opinions were integrated].
+- **Investor Opinions**: 
 
-### Recommendations
-- **Model Usage**
-
-
-## 2. Modelo Markowitz
+## 1. Modelo Markowitz
 
 ### Análisis y Observaciones
+- **Rendimientos historicos**:
+
+A continuacion se puede obervar el rendimiento promedio anual de las acciones colombianas a lo largo de 20 años 
+![](https://i.imgur.com/qnAVn4p.png[/img])
+
 - **Descripción del Portafolio**: El portafolio de tangencia busca maximizar el ratio de Sharpe.
 - **Resultados Clave**: 
   - Expected annual return: 16.0%
   - Annual volatility: 23.4%
   - Sharpe Ratio: 0.22
+ 
+ Con el metodo tradicional para maximizar la razon de charpe se optine los siguientes pesos % del las acciones en el portafolio optimo. 
+ 
+![](https://i.imgur.com/xFRlopu.png[/img])
+
+Sin embargo como se puede obervar en la tabla los pesos porcentuales se consentran en pocos activos lo que puede significar un alto nivel de riesgo al no diversificar el portafolio de una manera mas proporcionada por se hace un proceso de regulacion con un proceso de machine learning como se puede apreciar a conticuancion  
 
 - **Regularización L2**:
   - Expected annual return: 15.6%
   - Annual volatility: 22.4%
   - Sharpe Ratio: 0.21
+  
+  Se puede observar como con este metodo se disminuye el riesgo
+  
+![](https://i.imgur.com/7JMfNqK.png[/img])
+
+apesar de que se sigue consentrando en solo 3 activos los pesos estan mas equilibrados entre si lo que confirma la teoria de markowitz que dice que entre mayor diversificacion en el portafolio menor es el riesgo asumido.
 
 ### Insights
 - **Rendimiento**: [Discusión sobre el rendimiento del portafolio].
