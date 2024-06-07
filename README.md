@@ -53,7 +53,7 @@ Se puede observar como la mayoria de las empresas seleccionadas tienen un rendim
   - Annual volatility: 23.4%
   - Sharpe Ratio: 0.22
  
- Con el metodo tradicional para maximizar la razon de Sharpe se optine los siguientes pesos porcentuales en el portafolio optimo. 
+ Al maximizar la razon de Sharpe se optine los siguientes pesos porcentuales en el portafolio optimo. 
  
 ![](https://i.imgur.com/xFRlopu.png[/img])
 
@@ -93,8 +93,23 @@ El modelo markowitz es util para tener una idea de como ha sido el rendimineto d
 
 ### Análisis y Observaciones
 - **Descripción del Modelo**: El modelo Black-Litterman combina las expectativas del mercado con las opiniones del inversor.
-- **Implementación**: Se implementó utilizando [detalles específicos del código].
-- **Resultados Clave**: [Incluir resultados importantes del análisis].
+
+- **Descripción del Portafolio**: El portafolio de tangencia busca maximizar el ratio de Sharpe.
+- **Resultados Clave**: 
+  - Expected annual return: 10.6%
+  - Annual volatility: 21.5%
+  - Sharpe Ratio: 0.40
+ 
+ Al maximizar la razon de Sharpe se optine los siguientes pesos porcentuales en el portafolio optimo. 
+ 
+![](https://i.imgur.com/xFRlopu.png[/img])
+
+Se puede obervar en la tabla los pesos porcentuales se consentran en pocos activos lo que puede significar un alto nivel de riesgo al no diversificar el portafolio de una manera mas proporcionada por se hace un proceso de regulacion con un proceso de machine learning como se puede apreciar a conticuancion  
+
+- **Regularización L2**:
+  - Expected annual return: 9.1%
+  - Annual volatility: 19.1%
+  - Sharpe Ratio: 0.37
 
 ### Insights
 - **Perspectiva del Mercado**: [Discusión sobre las expectativas del mercado].
