@@ -19,146 +19,143 @@ This project includes two main notebooks that address different aspects of portf
   ```
 - **Key Results**:
 
-| Indicator                | Modelo Markowitz | Modelo Black-Litterman |
+
+| Indicator                | Markowitz Model | Black-Litterman Model |
 |--------------------------|------------------|------------------------|
 | Expected Annual Return   |     15.6%       | 9.1%                 |
 | Annual Volatility        |     22.4%       | 19.1%               |
 | Sharpe Ratio             |          0.21    | 0.37                  |
 
+## Insights
+- **Market Perspective**:
+The Colombian market presents several challenges for investment due to its developing nature:
+	- Low liquidity
+	- High volatility/high level of risk
+	- Low returns
+	- Limited diversification options
+	- Few companies outperform a risk-free asset in Colombia
+	- Limited presence of technology companies
+	- High probability of currency devaluation
 
-### Insights
-- **Market Perspective**: The Colombia market presents several challenges for investment due to its developing nature:
-  - Low liquidity
-  - High volatility/high level of risk
-  - Low returns
-  - Limited diversification options
-  - Few companies outperform a risk-free asset in Colombia
-  - Limited presence of technology companies
-  - High probability of currency devaluation
+## 1. Markowitz Model
 
+### Analysis and Observations
+- **Historical Returns**:
 
-## 1. Modelo Markowitz
+Below is the average annual return of Colombian stocks over 20 years:
+![](https://i.imgur.com/qnAVn4p.png)
 
-### Análisis y Observaciones
-- **Rendimientos historicos**:
+It can be observed that the majority of the selected companies have a return higher than the current risk-free rate in Colombia, which is approximately 10%. However, it is noteworthy that many of these companies had their best returns in the first 10 years. After that, they experienced slower growth, and some even depreciated. However, due to their higher past returns, they still showed favorable results when calculating returns, indicating a high level of short-term risk. Furthermore, this analysis does not account for the current political and economic uncertainty in the country.
 
-A continuacion se puede obervar el rendimiento promedio anual de las acciones colombianas a lo largo de 20 años 
-![](https://i.imgur.com/qnAVn4p.png[/img])
-
-Se puede observar como la mayoria de las empresas seleccionadas tienen un rendimiento superior a la tasa libre de riesgo actual en colombia que esta en un porcentaje rondeado de 10%, sin embargo cabe destacar que una gran mayoria de estas tuvo sus mejores rendimientos en sus primeros 10 años apartir de ahi tuvieron un crecimiento mas lento incluso algunas de ellas se desvalorizaron pero al haber tenido grander rendimientos en el pasado al calcular el rendimiento salieron faborecidas. lo que puede significar un alto nivel de riesgo en el corto plazo. ademas sin tener la incertidumbre politica y economica que esta viviendo el pais actualmente.
-
-- **Descripción del Portafolio**: El portafolio de tangencia busca maximizar el ratio de Sharpe.
-- **Resultados Clave**: 
+- **Portfolio Description**: The tangency portfolio aims to maximize the Sharpe ratio.
+- **Key Results**: 
   - Expected annual return: 16.0%
   - Annual volatility: 23.4%
   - Sharpe Ratio: 0.22
  
- Al maximizar la razon de Sharpe se optine los siguientes pesos porcentuales en el portafolio optimo. 
+By maximizing the Sharpe ratio, the following percentage weights are obtained in the optimal portfolio:
  
-![](https://i.imgur.com/xFRlopu.png[/img])
+![](https://i.imgur.com/xFRlopu.png)
 
-Sin embargo como se puede obervar en la tabla los pesos porcentuales se consentran en pocos activos lo que puede significar un alto nivel de riesgo al no diversificar el portafolio de una manera mas proporcionada por se hace un proceso de regulacion con un proceso de machine learning como se puede apreciar a conticuancion  
+However, as observed in the table, the percentage weights are concentrated in a few assets, indicating a high level of risk due to insufficient diversification. To address this, a regularization process using machine learning is applied, as shown below.
 
-- **Regularización L2**:
+- **L2 Regularization**:
   - Expected annual return: 15.6%
   - Annual volatility: 22.4%
   - Sharpe Ratio: 0.21
   
-  Se puede observar como con este metodo se disminuye el riesgo
+  Applying this method reduces risk as shown below:
   
-![](https://i.imgur.com/7JMfNqK.png[/img])
+![](https://i.imgur.com/7JMfNqK.png)
 
-apesar de que se sigue consentrando en solo 3 activos los pesos estan mas equilibrados entre si lo que confirma la teoria de markowitz que dice que entre mayor diversificacion en el portafolio menor es el riesgo asumido.
+Although the portfolio still focuses on only three assets, the weights are more balanced, confirming Markowitz's theory that greater diversification in the portfolio leads to lower assumed risk.
 
-### Frontera efficiente
+### Efficient Frontier
 
-![](https://i.imgur.com/g0tNqQR.png[/img])
+![](https://i.imgur.com/g0tNqQR.png)
 
-como se observa en la frontera eficiente la estrella es el punto de tangencia el cual determina el portafolio optimo. Los puntos negros con letras en rojo son los activos que hacen parte de ese portafolio. se ve como el modelo elije activos que tengan mejor relacino riesgo/rendimiento ademas de que escoge los activos que esten por encima del punto de inicio de la linea de mercado de capitales lo que significa que se escogen activos que tengan rendimiento superior a un activo libre de riesgo.
+In the efficient frontier, the star denotes the tangency point, which determines the optimal portfolio. The black dots with red letters represent the assets included in that portfolio.
 
 ### Insights
-- **Rendimiento**: teniendo en cuanta la situacion economica del pais se puede considerar una buen rendimiento para un portafolio conformado por empresas de un pais en desarrollo.
+- **Return**: Considering the country's economic situation, the return can be considered good for a portfolio composed of companies in a developing country.
+- **Volatility**: However, when considering volatility, the return is low compared to the assumed risk, as indicated by the Sharpe ratio of 0.21, suggesting minimal return for the risk taken.
 
-- **Volatilidad**:  Por otro lado al tener en cuenta la volatilidad el rendimiento es bajo comparado al riesgo asumido, como se puede ver en la razon de Sharpe de 0.21 lo cual indica poca retribucion por el riesgo tomado 
+### Recommendations
+- **Portfolio Optimization**: When making investment decisions, strictly adhering to the portfolio presented here may not be prudent, as this model does not consider the current situation of each of these companies or the macroeconomic context. Therefore, before investing, conducting exhaustive studies and fundamental analysis of each of these companies is recommended.
 
-### Recomendaciones
-- **Optimización del Portafolio**: Al tomar deciciones de inversion no seria sensato regirse estricatamente por el portafolio aqui presentado ya este modelo no tiene en cuenta la situacion actual de cada una de estas empresas ni el contexto macroeconimico. por lo que antes de invertir se recomendaria hacer un estudio exautivo y un analisis fundamental de cada una de estas empresas. 
+### Conclusion
 
-
-### Conclusión
-
-El modelo markowitz es util para tener una idea de como ha sido el rendimineto de los activos a traves de los años y como se puede diversificar el riesgo al invertir en una variedad de activos, sin embargo, al intentar predecir el comportamiento de las acciones tiende a quedarse corto al asumir que el mercado se comportara de igual forma en el futuro. 
-
-## 1. MODELO BLACK LITTERMAN
-
-### Análisis y Observaciones
-- **Descripción del Modelo**: El modelo Black-Litterman combina las expectativas del mercado con las opiniones del inversor.
-
-- **Rendimiento esperado**:
-
-PRIOR
-![](https://i.imgur.com/c3Cur4j.png[/img])
-
-Como se puede observar en la grafica los rendimientos esperados calculados por el modelos estan por debajo de la tasa libre de riesgo en colombia, por lo tanto sera necesario omitir el uso de esta para maximizar la razon de Sharpe, ya que el modelo solo distribuye peso a las acciones que estan por encima a la tasa libre de riesgo.
-
-- **Opiniones del inversor**
-
-views 
-![](https://i.imgur.com/N46hW5w.png[/img])
-
-en este Diccionario se puede ver las opiniones del inversionista de como sera el rendimiento anual esperado para cada una de las acciones.
-
-- **Descripción del Portafolio**: El portafolio de tangencia busca maximizar el ratio de Sharpe.
-- **Resultados Clave**: 
-  - Expected annual return: 10.6%
-  - Annual volatility: 21.5%
-  - Sharpe Ratio: 0.40
- 
- Al maximizar la razon de Sharpe se optine los siguientes pesos porcentuales en el portafolio optimo. 
- 
-![](https://i.imgur.com/BZF1B7H.png[/img])
-
-Se puede obervar en la tabla los pesos porcentuales se consentran en pocos activos lo que puede significar un alto nivel de riesgo al no diversificar el portafolio de una manera mas proporcionada por se hace un proceso de regulacion con un proceso de machine learning como se puede apreciar a conticuancion  
-
-- **Regularización L2**:
-  - Expected annual return: 9.1%
-  - Annual volatility: 19.1%
-  - Sharpe Ratio: 0.36
-  
- Se puede observar como con este metodo se disminuye el riesgo
-  
-![](https://i.imgur.com/IanvK31.png[/img])
-
-![](https://i.imgur.com/ItSltVn.png[/img])
-
-Se puede observar una mejor distribuacion de los pesos del portafolio optimo 
-
-- **Comparacion**:
-
-![](https://i.imgur.com/K2jrJY2.png[/img])
-
-![](https://i.imgur.com/uIiYK2h.png[/img])
-
-Se puede observar como en la mayoria de los casos posterior es el promedio de views y prior teniendo en cuenta la teroria de bayesiana 
-
-### Frontera efficiente
-
-![](https://i.imgur.com/cUTIIL7.png[/img])
-
-como se observa en la frontera eficiente la estrella es el punto de tangencia el cual determina el portafolio optimo. Los puntos negros con letras en rojo son los activos que hacen parte de ese portafolio. 
+The Markowitz model is useful for understanding the historical performance of assets over the years and how risk can be diversified by investing in a variety of assets. However, when attempting to predict the behavior of stocks, it falls short by assuming that the market will behave similarly in the future.
 
 
-### Insights
-- **Perspectiva del Mercado**: Con este modelo la esperanza de rendimientos en el meracado colombiano es menor que con el modelo Markowitz sin embargo este modelo esta mas ajustado a la realidad actual por la que pasa el pais en donde una gran cantida de empresas estan esperimentando perdidas considerables en el valor de sus acciones.
+## 2. Modelo Black-Litterman
 
-### Recomendaciones
-- **Uso del Modelo**:  Es importante aclarar que para el calculo de los wies que se incorporaran en el modelo como espectativa del inversor, es recomendable hacer un analisis fundamental y tecnico. ademas de tener un conocimiento micro y macro economico del mercado. sin embargo para este modelo se determinaron los views con base en rendimientos historicos y analisis de proyeccion con poca informacion.   
+### Analysis and Observations
 
-- **Mejoras Futuras**: Hacer un analisis exautivo de cada una de las empresas seleccionadas para tener proyecciones mas precisas y confiables. 
+- **Description of the Model**: The Black-Litterman model combines market expectations with investor opinions.
 
-### Conclusión
-- **Eficacia del los Modelos**:  The Markowitz model serves the function of reducing risk by diversifying across multiple companies; however, it is somewhat limited by relying solely on historical data. As the market is uncertain and tends to behave differently over the years, this limitation can affect its effectiveness. In contrast, the Black-Litterman model allows for adjustments based on investor opinions, making it more accurate and reliable for investment decisions.
+- **Expected Returns**:
+
+Prior:
+![Prior Returns](https://i.imgur.com/c3Cur4j.png)
+
+As can be seen in the graph, the expected returns calculated by the model are below the risk-free rate in Colombia. Therefore, it will be necessary to omit the use of this to maximize the Sharpe ratio, as the model only distributes weight to actions that are above the risk-free rate.
+
+- **Investor Opinions**:
+
+Views:
+![Investor Views](https://i.imgur.com/N46hW5w.png)
+
+In this dictionary, we can see the investor's opinions on the expected annual return for each of the actions.
+
+- **Portfolio Description**: The tangency portfolio seeks to maximize the Sharpe ratio.
+
+- **Key Results**:
+	- Expected annual return: 10.6%
+	- Annual volatility: 21.5%
+	- Sharpe Ratio: 0.40
+
+By maximizing the Sharpe ratio, the following percentage weights are obtained in the optimal portfolio.
+
+![Portfolio Weights](https://i.imgur.com/BZF1B7H.png)
+
+It can be observed in the table that the percentage weights are concentrated in a few assets, which may indicate a high level of risk due to the lack of diversification. However, a regularization process with machine learning is performed to achieve a more balanced distribution of weights in the portfolio.
+
+- **Regularization L2**:
+	- Expected annual return: 9.1%
+	- Annual volatility: 19.1%
+	- Sharpe Ratio: 0.36
+
+![Regularization L2](https://i.imgur.com/IanvK31.png)
+
+![Regularization L2](https://i.imgur.com/ItSltVn.png)
+
+A better distribution of weights in the optimal portfolio can be observed.
+
+- **Comparison**:
+
+![](https://i.imgur.com/K2jrJY2.png)
+![](https://i.imgur.com/uIiYK2h.png)
+
+It can be observed that in most cases, the posterior is the average of views and prior, taking into account Bayesian theory.
+
+
+### Efficient Frontier
+![Efficient Frontier](https://i.imgur.com/cUTIIL7.png)
+
+As observed in the efficient frontier, the star is the tangency point which determines the optimal portfolio. The black dots with red letters are the assets that are part of that portfolio.
+
+## Insights
+- **Market Perspective**: With this model, the expected return on investments in the Colombian market is lower than with the Markowitz model; however, this model is more adjusted to the current reality of the country, where many companies are experiencing significant losses in the value of their stocks.
+
+### Recommendations
+- **Use of the Model**: It is important to clarify that for the calculation of the weights to be incorporated into the model as the investor's expectation, it is recommended to perform a fundamental and technical analysis. Additionally, having a micro and macroeconomic knowledge of the market is important. However, for this model, the views were determined based on historical returns and projection analysis with limited information.
+
+- **Future Improvements**: Conduct a thorough analysis of each of the selected companies to have more precise and reliable projections.
+
+### Conclusion
+- **Model Efficacy**: The Markowitz model serves the function of reducing risk by diversifying across multiple companies; however, it is somewhat limited by relying solely on historical data. As the market is uncertain and tends to behave differently over the years, this limitation can affect its effectiveness. In contrast, the Black-Litterman model allows for adjustments based on investor opinions, making it more accurate and reliable for investment decisions.
 
 ---
 
-Para más detalles, consulta los notebooks individuales proporcionados en este proyecto.
+For more details, refer to the individual notebooks provided in this project.
