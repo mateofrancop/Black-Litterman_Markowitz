@@ -43,6 +43,7 @@ The Colombian market presents several challenges for investment due to its devel
 - **Historical Returns**:
 
 Below is the average annual return of Colombian stocks over 20 years:
+
 ![](https://i.imgur.com/qnAVn4p.png)
 
 It can be observed that the majority of the selected companies have a return higher than the current risk-free rate in Colombia, which is approximately 10%. However, it is noteworthy that many of these companies had their best returns in the first 10 years. After that, they experienced slower growth, and some even depreciated. However, due to their higher past returns, they still showed favorable results when calculating returns, indicating a high level of short-term risk. Furthermore, this analysis does not account for the current political and economic uncertainty in the country.
