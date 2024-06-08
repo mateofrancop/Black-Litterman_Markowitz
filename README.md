@@ -74,7 +74,7 @@ apesar de que se sigue consentrando en solo 3 activos los pesos estan mas equili
 
 ![](https://i.imgur.com/g0tNqQR.png[/img])
 
-como se observa en la frontera eficiente la estrella es el punto de tangencia el cual determina el portafolio optimo. Los puntos negros con letras en rojo son los activos que hacen parte de ese portafolio. se ve como el modelo elije activos que tengan mejor relacino riesgo/rendimiento ademas de que escoge los activos que esten por encima del punto de inicio de la linea de mercado de capitales lo que significa que se escogen activos que tengan mejor rendimiento que un activo libre de riesgo.
+como se observa en la frontera eficiente la estrella es el punto de tangencia el cual determina el portafolio optimo. Los puntos negros con letras en rojo son los activos que hacen parte de ese portafolio. se ve como el modelo elije activos que tengan mejor relacino riesgo/rendimiento ademas de que escoge los activos que esten por encima del punto de inicio de la linea de mercado de capitales lo que significa que se escogen activos que tengan rendimiento superior a un activo libre de riesgo.
 
 ### Insights
 - **Rendimiento**: teniendo en cuanta la situacion economica del pais se puede considerar una buen rendimiento para un portafolio conformado por empresas de un pais en desarrollo.
@@ -106,7 +106,7 @@ Como se puede observar en la grafica los rendimientos esperados calculados por e
 views 
 ![](https://i.imgur.com/N46hW5w.png[/img])
 
-en este Diccionario se puede ver las opiniones del inversionista de como sera el rendimiento anual esperado para cada una de las acciones. Es importante aclarar que para este calculo es recomendable hacer un analisis fundamental y tecnico. ademas de tener un conocimiento micro y macro economico del mercado. sin embargo para este modelo se determinaron los views con base en rendimientos historicos y analisis de proyeccion con poca informacion.   
+en este Diccionario se puede ver las opiniones del inversionista de como sera el rendimiento anual esperado para cada una de las acciones.
 
 - **Descripción del Portafolio**: El portafolio de tangencia busca maximizar el ratio de Sharpe.
 - **Resultados Clave**: 
@@ -133,21 +133,31 @@ Se puede obervar en la tabla los pesos porcentuales se consentran en pocos activ
 
 Se puede observar una mejor distribuacion de los pesos del portafolio optimo 
 
+- **Comparacion**:
+
+![](https://i.imgur.com/K2jrJY2.png[/img])
+
+![](https://i.imgur.com/uIiYK2h.png[/img])
+
+Se puede observar como en la mayoria de los casos posterior es el promedio de views y prior teniendo en cuenta la teroria de bayesiana 
+
+### Frontera efficiente
+
+![](https://i.imgur.com/cUTIIL7.png[/img])
+
+como se observa en la frontera eficiente la estrella es el punto de tangencia el cual determina el portafolio optimo. Los puntos negros con letras en rojo son los activos que hacen parte de ese portafolio. 
+
+
 ### Insights
-- **Perspectiva del Mercado**: [Discusión sobre las expectativas del mercado].
-- **Opiniones del Inversor**: [Discusión sobre cómo se integraron las opiniones del inversor].
+- **Perspectiva del Mercado**: Con este modelo la esperanza de rendimientos en el meracado colombiano es menor que con el modelo Markowitz sin embargo este modelo esta mas ajustado a la realidad actual por la que pasa el pais en donde una gran cantida de empresas estan esperimentando perdidas considerables en el valor de sus acciones.
 
 ### Recomendaciones
-- **Uso del Modelo**: Recomendamos utilizar el modelo Black-Litterman para [situaciones específicas].
-- **Mejoras Futuras**: [Sugerencias para mejorar el modelo].
+- **Uso del Modelo**:  Es importante aclarar que para el calculo de los wies que se incorporaran en el modelo como espectativa del inversor, es recomendable hacer un analisis fundamental y tecnico. ademas de tener un conocimiento micro y macro economico del mercado. sin embargo para este modelo se determinaron los views con base en rendimientos historicos y analisis de proyeccion con poca informacion.   
 
-### Descubrimientos
-- **Comparison with other Models**: The Markowitz model serves the function of reducing risk by diversifying across multiple companies; however, it is somewhat limited by relying solely on historical data. As the market is uncertain and tends to behave differently over the years, this limitation can affect its effectiveness. In contrast, the Black-Litterman model allows for adjustments based on investor opinions, making it more accurate and reliable for investment decisions.
-
+- **Mejoras Futuras**: Hacer un analisis exautivo de cada una de las empresas seleccionadas para tener proyecciones mas precisas y confiables. 
 
 ### Conclusión
-- **Eficacia del Modelo**: El modelo Black-Litterman es efectivo para [situaciones específicas] y proporciona [beneficios].
-
+- **Eficacia del los Modelos**:  The Markowitz model serves the function of reducing risk by diversifying across multiple companies; however, it is somewhat limited by relying solely on historical data. As the market is uncertain and tends to behave differently over the years, this limitation can affect its effectiveness. In contrast, the Black-Litterman model allows for adjustments based on investor opinions, making it more accurate and reliable for investment decisions.
 
 ---
 
