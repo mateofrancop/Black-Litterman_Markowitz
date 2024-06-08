@@ -94,6 +94,20 @@ El modelo markowitz es util para tener una idea de como ha sido el rendimineto d
 ### Análisis y Observaciones
 - **Descripción del Modelo**: El modelo Black-Litterman combina las expectativas del mercado con las opiniones del inversor.
 
+- **Rendimiento esperado**:
+
+PRIOR
+![](https://i.imgur.com/c3Cur4j.png[/img])
+
+Como se puede observar en la grafica los rendimientos esperados calculados por el modelos estan por debajo de la tasa libre de riesgo en colombia, por lo tanto sera necesario omitir el uso de esta para maximizar la razon de Sharpe, ya que el modelo solo distribuye peso a las acciones que estan por encima a la tasa libre de riesgo.
+
+- **Opiniones del inversor**
+
+views 
+![](https://i.imgur.com/N46hW5w.png[/img])
+
+en este Diccionario se puede ver las opiniones del inversionista de como sera el rendimiento anual esperado para cada una de las acciones. Es importante aclarar que para este calculo es recomendable hacer un analisis fundamental y tecnico. ademas de tener un conocimiento micro y macro economico del mercado. sin embargo para este modelo se determinaron los views con base en rendimientos historicos y analisis de proyeccion con poca informacion.   
+
 - **Descripción del Portafolio**: El portafolio de tangencia busca maximizar el ratio de Sharpe.
 - **Resultados Clave**: 
   - Expected annual return: 10.6%
@@ -102,14 +116,22 @@ El modelo markowitz es util para tener una idea de como ha sido el rendimineto d
  
  Al maximizar la razon de Sharpe se optine los siguientes pesos porcentuales en el portafolio optimo. 
  
-![](https://i.imgur.com/xFRlopu.png[/img])
+![](https://i.imgur.com/BZF1B7H.png[/img])
 
 Se puede obervar en la tabla los pesos porcentuales se consentran en pocos activos lo que puede significar un alto nivel de riesgo al no diversificar el portafolio de una manera mas proporcionada por se hace un proceso de regulacion con un proceso de machine learning como se puede apreciar a conticuancion  
 
 - **Regularización L2**:
   - Expected annual return: 9.1%
   - Annual volatility: 19.1%
-  - Sharpe Ratio: 0.37
+  - Sharpe Ratio: 0.36
+  
+ Se puede observar como con este metodo se disminuye el riesgo
+  
+![](https://i.imgur.com/IanvK31.png[/img])
+
+![](https://i.imgur.com/ItSltVn.png[/img])
+
+Se puede observar una mejor distribuacion de los pesos del portafolio optimo 
 
 ### Insights
 - **Perspectiva del Mercado**: [Discusión sobre las expectativas del mercado].
